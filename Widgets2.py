@@ -1,0 +1,17 @@
+from tkinter import*
+root = Tk()
+
+Label(root,text="Find").grid(row=1,column=1,sticky=W)
+Entry(root).grid(row=1,column=2,sticky=EW,columnspan=9)
+Button(root,text="Find").grid(row=1,column=6,sticky=EW,padx=2,pady=2)
+Label(root,text="Repalce").grid(row=2,column=1,sticky=W,)
+Entry(root).grid(row=2,column=2,sticky=EW,columnspan=9)
+Button(root,text="Find All").grid(row=2,column=6,sticky=EW,padx=2,pady=2)
+Checkbutton(root,text='Match Whole Word  ').grid(row=3,column=2,sticky=W)
+Checkbutton(root,text='Match case ').grid(row=4,column=2,sticky=W)
+Checkbutton(root,text='Wrap Around ').grid(row=5,column=2,sticky=W)
+Label(root,text="Direction:").grid(row=3,column=4,sticky=W)
+Button(root,text="Replace").grid(row=3,column=6,sticky=EW,padx=2,pady=2)
+Button(root,text="Replace All").grid(row=4,column=6,sticky=EW,padx=2,pady=2)
+Radiobutton(root,text="up",value=1).grid(row=4,column=4,sticky=W)
+Radiobutton(root,text="down",value=1).grid(row=4,column=5,sticky=W)
